@@ -84,7 +84,7 @@ Resources:
         - Name: !Ref KittensDomainName
           Type: A
           AliasTarget:
-            HostedZoneId: Z2FDTNDATAQYW2 
+            HostedZoneId: Z07510991ERGRQODMSP5V
             DNSName: !GetAtt KittensCloudfront.DomainName
 
 Outputs:
@@ -94,3 +94,6 @@ Outputs:
   CloudfrontEndpoint:
     Description: Endpoint for Kittens Cloudfront
     Value: !GetAtt KittensCloudfront.DomainName
+  FullDomainName:
+    Description: Full Domain Name of my Application
+    Value: !Ref KittensDomainNames
