@@ -1,0 +1,14 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: |
+  Cloudformation Template for kittens carousel static website deploy on s3 through cloudfront and route 53
+
+ParameterName:
+  DomainName:
+    Description: DNS Name of existing Amazon Route 53 hosted zone. exp. clarusway.us
+    Type: AWS::Route53::HostedZone::Id
+  
+  KittensDomainName:
+    Description: Full domain name for the App. ex. kittens.clarusway.us
+    Type: String
+    AllowedPattern: (?!-)[a-zA-Z0-9-.]{1,63}(?<!-): 
+  
