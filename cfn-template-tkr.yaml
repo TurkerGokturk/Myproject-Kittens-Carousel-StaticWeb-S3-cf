@@ -21,6 +21,7 @@ Resources:
       BucketName: !Ref KittensDomainName
       WebsiteConfiguration:
         IndexDocument: index.html
+  
   KittensBucketPolicy:
     Type: AWS::S3::BucketPolicy
     Properties:
