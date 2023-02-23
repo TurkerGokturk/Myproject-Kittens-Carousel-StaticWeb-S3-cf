@@ -91,3 +91,6 @@ Outputs:
   BucketName: 
     Description: S3 Bucket URL for Kittens Website
     Value: !GetAtt KittensBucket.WebsiteURL
+  CloudfrontEndpoint:
+    Description: Endpoint for Kittens Cloudfront
+    Value: !GetAtt KittensCloudfront.DomainName
